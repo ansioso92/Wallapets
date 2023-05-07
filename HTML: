@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallapets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Login/Registro-->
+    <div class="login">
+        <h1>Login o registro</h1>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="user-type">Selecciona tipo de usuario:</label>
+            <select id="user-type" name="user-type" required>
+                <option value="usuario">Usuario</option>
+                <option value="protectora">Protectora</option>
+            </select>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!--Página principal-->
+    <div class="main">
+        <h1>Bienvenido a Wallapets</h1>
+        <form>
+            <label for="pet-type">Tipo de mascota:</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="reptil">Reptil</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="pet-age">Edad:</label>
+            <select id="pet-age" name="pet-age" required>
+                <option value="cachorro">Cachorro</option>
+                <option value="adulto">Mayor de un año</option>
+            </select>
+            <label for="pet-race">Raza:</label>
+            <select id="pet-race" name="pet-race">
+                <option value="">Seleccione una raza</option>
+                <option value="labrador">Labrador</option>
+                <option value="pastor-aleman">Pastor alemán</option>
+                <option value="bulldog">Bulldog</option>
+                <!--Aquí se añaden más razas-->
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <!--Resultados de la búsqueda-->
+        <div class="search-results">
+            <!--Aquí se muestran los resultados-->
+        </div>
+    </div>
+
+    <!--Detalles del animal en adopción-->
+    <div class="pet-details">
+        <h2>Nombre del animal</h2>
+        <img src="animal.jpg" alt="Imagen del animal">
+        <p>Información del animal</p>
+        <button id="contact-protectora">Estoy interesado</button>
+    </div>
+
+    <!--Chat con la protectora-->
+    <div class="chat">
+        <h2>Chat con la protectora</h2>
+        <ul id="chat-messages">
+            <!--Aquí se muestran los mensajes-->
+        </ul>
+        <form>
+            <input type="text" id="message" name="message" required>
+            <button type="submit">Enviar</button>
+       
