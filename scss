@@ -1,0 +1,49 @@
+//Variables
+let users = [];
+let verifiedUsers = [];
+
+//Funciones
+function createUser(username, password, email, isProtectora) {
+  let user = {
+    username: username,
+    password: password,
+    email: email,
+    isProtectora: isProtectora,
+    id: users.length + 1,
+    publicaciones: [],
+    ubicacion: "",
+    telefono: "",
+    correo: "",
+    chat: []
+  }
+  users.push(user);
+  if (isProtectora) {
+    verifiedUsers.push(user);
+  }
+}
+
+function createPublicacion(user, animal, categoria, raza, edad, imagen) {
+  let publicacion = {
+    animal: animal,
+    categoria: categoria,
+    raza: raza,
+    edad: edad,
+    imagen: imagen,
+    id: user.publicaciones.length + 1,
+    interesados: []
+  }
+  user.publicaciones.push(publicacion);
+}
+
+function agregarInteresado(user, publicacion, mensaje) {
+  let interesado = {
+    user: user,
+    publicacion: publicacion,
+    mensaje: mensaje
+  }
+  publicacion.interesados.push(interesado);
+  user.chat.push(interesado);
+}
+
+function getRazasPerros() {
+  return [    "Affenpinscher",    "Afghan Hound",    "Airedale Terrier",    "Akita",    "Alaskan Malamute",    "American Cocker Spaniel",    "American Pit Bull Terrier",    "American Staffordshire Terrier",    "Australian Cattle Dog",    "Australian Shepherd",    "Basset Hound",    "Beagle",    "Bearded Collie",    "Bedlington Terrier",    "Bernese Mountain Dog",    "Bichón Frisé",    "Bichón Maltés",    "Bloodhound",    "Border Collie",    "Border Terrier",    "Boston Terrier",    "Boxer",    "Boyero de Berna",    "Bulldog",    "Bulldog Francés",    "Bullmastiff",    "Cairn Terrier",    "Caniche",    "Carlino",    "Cavalier King Charles Spaniel",    "Chihuahua",    "Chow Chow",    "Cocker Spaniel Inglés",    "Collie",    "Crestado Chino",    "Dálmata",    "Doberman",    "Dogo Alemán",    "Dogo de Burdeos",    "English Springer Spaniel",    "Flat Coated Retriever",    "Fox Terrier",    "Foxhound",    "Galgo",    "Golden Retriever",    "Gos d'Atura",    "Gran Danés",    "Greyhound",    "Grifón",    "Husky Siberiano",    "Jack Russell Terrier",    "Labrador Retriever",    "Lebrel Afgano",    "Lebrel Húngaro",    "Lebrel Irlandés",    "Lhasa Apso",    "Mastín",    "Mastín del Pirineo",    "Mastín Español",    "Mestizo",    "Norfolk Terrier",    "Norwich Terrier",    "Old English Sheepdog",    "Papillon",    "Pastor Alemán",    "Pastor Belga",    "Pastor Catalán",    "Pequin
