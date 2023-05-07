@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallapets - Adopción de Mascotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wallapets</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Publicar</a></li>
+                <li><a href="#">Mi cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="buscador">
+            <h2>Encuentra a tu nuevo mejor amigo</h2>
+            <form>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="perros">Perros</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="aves">Aves</option>
+                    <option value="reptiles">Reptiles</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="raza">Raza:</label>
+                <select id="raza" name="raza">
+                    <option value="">Seleccionar Raza</option>
+                    <optgroup label="Perros">
+                        <option value="bulldog">Bulldog</option>
+                        <option value="labrador">Labrador</option>
+                        <option value="chihuahua">Chihuahua</option>
+                        <option value="poodle">Poodle</option>
+                        <option value="husky">Husky</option>
+                        <option value="dalmata">Dálmata</option>
+                    </optgroup>
+                    <optgroup label="Gatos">
+                        <option value="siames">Siamés</option>
+                        <option value="persa">Persa</option>
+                        <option value="angora">Angora</option>
+                        <option value="siberiano">Siberiano</option>
+                    </optgroup>
+                </select>
+                <label for="edad">Edad:</label>
+                <select id="edad" name="edad">
+                    <option value="cachorro">Cachorro</option>
+                    <option value="mayor">Mayor de un año</option>
+                </select>
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" name="ubicacion">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section id="resultados">
+            <article>
+                <img src="https://via.placeholder.com/150" alt="Perro en adopción">
+                <h3>Nombre del perro</h3>
+                <p>Raza: Bulldog</p>
+                <p>Edad: Cachorro</p>
+                <p>Ubicación: Madrid</p>
+                <button class="interesado">Estoy interesado</button>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/150"
