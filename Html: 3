@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WallaPets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Publicar</a></li>
+                <li><a href="#">Mi cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Bienvenido a WallaPets</h1>
+        <h2>Encuentra a tu compañero ideal</h2>
+    </section>
+
+    <section id="search">
+        <h2>Buscar animales</h2>
+        <form>
+            <select name="species" id="species">
+                <option value="">Seleccione una especie</option>
+                <option value="dog">Perros</option>
+                <option value="cat">Gatos</option>
+                <option value="bird">Aves</option>
+                <option value="reptile">Reptiles</option>
+                <option value="other">Otro</option>
+            </select>
+            <select name="breed" id="breed" disabled>
+                <option value="">Seleccione una raza</option>
+            </select>
+            <label for="age">Edad:</label>
+            <select name="age" id="age">
+                <option value="">Todas las edades</option>
+                <option value="puppy">Cachorro</option>
+                <option value="adult">Mayor de un año</option>
+            </select>
+            <label for="distance">Distancia:</label>
+            <select name="distance" id="distance">
+                <option value="10">10 km</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="100">100 km</option>
+                <option value="250">250 km</option>
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section id="animals">
+        <h2>Animales en adopción</h2>
+        <ul>
+            <li>
+                <img src="https://via.placeholder.com/150x150" alt="Perro">
+                <div>
+                    <h3>Nombre del animal</h3>
+                    <p>Raza: Labrador Retriever</p>
+                    <p>Edad: Cachorro</p>
+                    <p>Ubicación: Madrid</p>
+                    <button class="interested">Estoy interesado</button>
+                </div>
+            </li>
+            <li>
+                <img src="https://via.placeholder.com/150x150" alt="Gato">
+                <div>
+                    <h3>Nombre del animal</h3>
+                    <p>Raza: Siamés</p>
+                    <p>Edad: Mayor de un año</p>
+                    <p>Ubicación: Barcelona
