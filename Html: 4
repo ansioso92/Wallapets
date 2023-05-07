@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wallapets</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Wallapets</h1>
+		<nav>
+			<ul>
+				<li><a href="#login">Login</a></li>
+				<li><a href="#register">Registro</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="search">
+			<h2>Buscar Mascotas</h2>
+			<form>
+				<label for="animal">Tipo de Animal:</label>
+				<select id="animal">
+					<option value="perro">Perro</option>
+					<option value="gato">Gato</option>
+					<option value="ave">Ave</option>
+					<option value="reptil">Reptil</option>
+					<option value="otro">Otro</option>
+				</select>
+				<label for="raza">Raza:</label>
+				<select id="raza">
+					<option value="todas">Todas las Razas</option>
+					<option value="pastor aleman">Pastor Alemán</option>
+					<option value="labrador">Labrador Retriever</option>
+					<option value="golden retriever">Golden Retriever</option>
+					<option value="bulldog">Bulldog</option>
+					<option value="poodle">Caniche</option>
+					<option value="chihuahua">Chihuahua</option>
+					<option value="dalmata">Dálmata</option>
+					<option value="husky">Husky Siberiano</option>
+					<option value="boxer">Boxer</option>
+					<option value="otra">Otra</option>
+				</select>
+				<label for="edad">Edad:</label>
+				<select id="edad">
+					<option value="todas">Todas las Edades</option>
+					<option value="cachorro">Cachorro</option>
+					<option value="adulto">Mayor de un Año</option>
+				</select>
+			
