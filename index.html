@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallapets - Adopción de Mascotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Página de inicio de sesión o registro -->
+    <div id="login">
+        <h1>Wallapets</h1>
+        <form id="login-form">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required>
+            <input type="submit" value="Iniciar sesión">
+            <p>¿No tienes cuenta? <a href="#register">Regístrate</a></p>
+        </form>
+    </div>
+
+    <!-- Página de registro -->
+    <div id="register">
+        <h1>Registro</h1>
+        <form id="register-form">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required>
+            <label for="confirm-password">Confirmar contraseña</label>
+            <input type="password" id="confirm-password" required>
+            <input type="checkbox" id="protectora" name="protectora" value="protectora">
+            <label for="protectora">Soy una protectora de animales</label>
+            <input type="submit" value="Registrarse">
+            <p>¿Ya tienes cuenta? <a href="#login">Inicia sesión</a></p>
+        </form>
+    </div>
+
+    <!-- Página principal de Wallapets -->
+    <div id="wallapets">
+        <header>
+            <h1>Wallapets</h1>
+            <nav>
+                <ul>
+                    <li><a href="#wallapets">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#login">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="search-bar">
+            <label for="pet-type">Tipo de mascota:</label>
+            <select id="pet-type">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="reptil">Reptil</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="pet-age">Edad de la mascota:</label>
+            <select id="pet-age">
+                <option value="cachorro">Cachorro</option>
+                <option value="adulto">Adulto</option>
+            </select>
+
+            <label for="pet-location">Ubicación:</label>
+            <input type="text" id="pet-location"
