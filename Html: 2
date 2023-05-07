@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wallapets</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Wallapets</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="#login">Iniciar sesión</a></li>
+          <li><a href="#register">Registrarse</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <form>
+        <label>Tipo de animal:</label>
+        <select name="tipo">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="ave">Ave</option>
+          <option value="reptil">Reptil</option>
+          <option value="otro">Otro</option>
+        </select>
+        <label>Raza:</label>
+        <select name="raza">
+          <option value="labrador">Labrador Retriever</option>
+          <option value="bulldog">Bulldog</option>
+          <option value="pastor">Pastor Alemán</option>
+          <!-- Todas las demás razas aquí -->
+        </select>
+        <label>Edad:</label>
+        <input type="radio" name="edad" value="cachorro">Cachorro
+        <input type="radio" name="edad" value="adulto">Mayor de un año
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="results">
+        <div class="animal">
+          <h2>Nombre del animal</h2>
+          <img src="ruta/de/la/imagen.jpg" alt="Foto del animal">
+          <p>Información del animal</p>
+          <button class="interested">Estoy interesado</button>
+        </div>
+        <!-- Todas las demás publicaciones aquí -->
+      </div>
+    </div>
+    <div class="footer">
+      <p>Wallapets &copy; 2023</p>
+    </div>
+  </body>
+</html>
